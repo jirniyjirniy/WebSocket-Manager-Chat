@@ -1,3 +1,3 @@
-# Jatte
+# WebSocket Chat manager 
 
-This project is the base starter for a tutorial from Code With Stein
+Проект созданный для лучшего понимания вэбсокетов и асинхронности
