@@ -30,8 +30,15 @@ ALLOWED_HOSTS = []
 AUTH_USER_MODEL = 'account.User'
 
 LOGIN_URL = '/login/'
-LOGIN_REDIRECT_URL = '/chat-admin/'
+LOGIN_REDIRECT_URL = '/partials-admin/'
 LOGOUT_REDIRECT_URL = '/'
+
+
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels.layers.InMemoryChannelLayer',
+    }
+}
 
 # Application definition
 
@@ -45,6 +52,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'account',
     'core',
+    'chat',
 ]
 
 MIDDLEWARE = [
